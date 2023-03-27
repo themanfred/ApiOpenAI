@@ -1,0 +1,27 @@
+<div>
+    <Head>
+      <title>OpenAI Quickstart</title>
+    </Head>
+  
+    <main className=main>
+      <h3>Tell the ai to edit it with an instruction</h3>
+      <form>
+        <input
+          type="text"
+          name="input2Bflagged"
+          placeholder="Enter an input"
+          [(ngModel)] = "input"
+        />
+
+        <input
+            type="text"
+            name="instruction"
+            placeholder="Enter an instruction"
+            [(ngModel)] = "instruction"
+        />
+
+        <input type="button" value="Edit text" (click)="postCompletition()" />
+              </form>
+              <div className=result> {{result}} </div>
+    </main>
+  </div>
